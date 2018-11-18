@@ -6,9 +6,7 @@ import "./Navigation.css";
 
 class Navigation extends Component {
   componentDidMount() {
-    const genresURL = `https://api.themoviedb.org/3/genre/movie/list?api_key=${
-      process.env.REACT_APP_TMDB_API_KEY
-    }&language=en-US`;
+    const genresURL = `https://api.themoviedb.org/3/genre/movie/list?api_key=4edc842e0778ceb6aa5c4bc975d69652&language=en-US`;
 
     fetch(genresURL)
       .then(response => response.json())

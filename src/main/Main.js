@@ -10,12 +10,8 @@ class Main extends Component {
       movies: [],
       page: 1,
       total_pages: 1,
-      url: `https://api.themoviedb.org/3/genre/movie/list?api_key=${
-        process.env.REACT_APP_TMDB_API_KEY
-      }&language=en-US`,
-      moviesUrl: `https://api.themoviedb.org/3/discover/movie?api_key=${
-        process.env.REACT_APP_TMDB_API_KEY
-      }&language=en-US&sort_by=popularity.desc&include_adult=false&include_video=false&page=1`,
+      url: `https://api.themoviedb.org/3/genre/movie/list?api_key=4edc842e0778ceb6aa5c4bc975d69652&language=en-US`,
+      moviesUrl: `https://api.themoviedb.org/3/discover/movie?api_key=4edc842e0778ceb6aa5c4bc975d69652&language=en-US&sort_by=popularity.desc&include_adult=false&include_video=false&page=1`,
       genre: "Comedy",
       genres: [],
       year: {
@@ -129,7 +125,7 @@ class Main extends Component {
 
     const moviesUrl =
       `https://api.themoviedb.org/3/discover/movie?` +
-      `api_key=651925d45022d1ae658063b443c99784&` +
+      `api_key=4edc842e0778ceb6aa5c4bc975d69652&` +
       `language=en-US&sort_by=popularity.desc&` +
       `with_genres=${genreId}&` +
       `primary_release_date.gte=${year.value.min}-01-01&` +
